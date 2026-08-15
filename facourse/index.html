@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="id" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="FA Course - platform belajar web dasar yang sederhana dan interaktif.">
+
+    <title>FA Course | Jadi PRO-grammer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top" aria-label="Navigasi utama">
+        <div class="container">
+            <a class="navbar-brand" href="#beranda" aria-label="FA Course beranda">
+                <span class="brand-mark"><i class="fa-solid fa-laptop-code"></i></span>
+                <span>FA Course</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Buka menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#beranda">Beranda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kelas">Kelas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alur">Alur Belajar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kuis">Kuis</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <button id="themeToggle" class="btn btn-icon" type="button" aria-label="Aktifkan mode gelap"
+                            title="Ubah tema">
+                            ◐
+                        </button>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-primary px-4" href="#kelas">
+                            Mulai Belajar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="beranda" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <span class="eyebrow">
+                            BELAJAR. PRAKTIK. BERKEMBANG.
+                        </span>
+
+                        <h1>
+                            Bangun skill digitalmu,
+                            <span>selangkah demi selangkah.</span>
+                        </h1>
+
+                        <p class="hero-copy">
+                            Materi ringkas, latihan langsung, dan alur belajar yang jelas
+                            untuk membantumu menguasai dasar pengembangan web.
+                        </p>
+
+                        <form id="searchForm" class="search-box" role="search">
+                            <label class="visually-hidden" for="courseSearch">
+                                Cari materi
+                            </label>
+
+                            <span aria-hidden="true">⌕</span>
+
+                            <input id="courseSearch" type="search" placeholder="Cari materi, misalnya HTML..."
+                                autocomplete="off">
+
+                            <button class="btn btn-primary" type="submit">
+                                Cari Kelas
+                            </button>
+                        </form>
+
+                        <div class="trust-row" aria-label="Keunggulan">
+                            <span>✓ Materi pemula</span>
+                            <span>✓ Proyek nyata</span>
+                            <span>✓ Akses fleksibel</span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="hero-visual" aria-label="Ringkasan progres belajar">
+                            <div class="code-window">
+                                <div class="window-bar">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <span>index.html</span>
+                                </div>
+                                <pre><code><b>&lt;section</b> class=<em>"hero"</em><b>&gt;</b>
+<b>&lt;h1&gt;</b>Mulai belajar<b>&lt;/h1&gt;</b>
+<b>&lt;button&gt;</b>Ayo mulai!<b>&lt;/button&gt;</b>
+<b>&lt;/section&gt;</b></code></pre>
+                            </div>
+
+                            <div class="progress-card floating-card">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <small>PROGRES HARI INI</small>
+                                        <strong>75%</strong>
+                                    </div>
+
+                                    <span class="progress-icon">↗</span>
+                                </div>
+
+                                <div class="progress" role="progressbar" aria-label="Progres belajar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 75%"></div>
+                                </div>
+
+                                <p>Hebat! Satu materi lagi menuju target.</p>
+                            </div>
+
+                            <span class="spark spark-one">+</span>
+                            <span class="spark spark-two">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-strip" aria-label="Statistik platform">
+            <div class="container">
+                <div class="row g-0 text-center">
+                    <div class="col-6 col-lg-3 stat">
+                        <strong>99+</strong>
+                        <span>Kelas Terarah</span>
+                    </div>
+
+                    <div class="col-6 col-lg-3 stat">
+                        <strong>99+</strong>
+                        <span>Modul Praktis</span>
+                    </div>
+
+                    <div class="col-6 col-lg-3 stat">
+                        <strong>9.99k+</strong>
+                        <span>Pelajar Aktif</span>
+                    </div>
+
+                    <div class="col-6 col-lg-3 stat">
+                        <strong>5/5</strong>
+                        <span>Rating Belajar</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kelas" class="section-space">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="eyebrow">KELAS PILIHAN</span>
+                    <h2>Mulai dari fondasi yang tepat</h2>
+
+                    <p>
+                        Pilih kelas berdasarkan topik atau tingkat kesulitanmu.
+                    </p>
+                </div>
+
+                <div class="filter-row" role="group" aria-label="Filter kelas">
+                    <button class="filter-btn active" data-filter="all" type="button">
+                        Semua
+                    </button>
+
+                    <button class="filter-btn" data-filter="pemula" type="button">
+                        Pemula
+                    </button>
+
+                    <button class="filter-btn" data-filter="menengah" type="button">
+                        Menengah
+                    </button>
+
+                    <button class="filter-btn" data-filter="pro" type="button">
+                        Pro
+                    </button>
+                </div>
+
+                <p id="searchStatus" class="search-status" aria-live="polite"></p>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 course-item" data-level="pemula"
+                        data-search="html struktur web semantic">
+                        <article class="course-card">
+                            <div class="course-cover cover-html">
+                                <span class="course-icon"><i class="fa-solid fa-code"></i></span>
+                                <span class="level-badge">PEMULA</span>
+                            </div>
+
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span>64 Modul</span>
+                                    <span>± 9 Jam</span>
+                                </div>
+
+                                <h3>HTML: Fondasi Halaman Web</h3>
+
+                                <p>
+                                    Pelajari struktur, elemen semantik, formulir, dan praktik
+                                    aksesibilitas dasar.
+                                </p>
+
+                                <div class="course-footer">
+                                    <strong>Gratis</strong>
+
+                                    <button class="link-button" type="button">
+                                        <a href="https://youtube.com/playlist?list=PL0A06OwyXeD2095arthcQy5TEw1Ce-g3H&si=3kjW40NCiNiwdQqV"
+                                            target="_blank">Mulai Belajar →
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="pemula"
+                        data-search="css styling layout flexbox grid responsive">
+                        <article class="course-card">
+                            <div class="course-cover cover-css">
+                                <span class="course-icon"><i class="fa-brands fa-css3"></i></span>
+                                <span class="level-badge">PEMULA</span>
+                            </div>
+
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span>54 Modul</span>
+                                    <span>± 17 Jam</span>
+                                </div>
+
+                                <h3>CSS: Styling & Layout Modern</h3>
+
+                                <p>
+                                    Kuasai selector, box model, Flexbox, Grid, animasi, dan
+                                    desain responsif.
+                                </p>
+
+                                <div class="course-footer">
+                                    <strong>Gratis</strong>
+
+                                    <button class="link-button" type="button">
+                                        <a href="https://youtube.com/playlist?list=PL0A06OwyXeD1Gu174VUCSp0m6XgTK5xlq&si=cFLX5IrMno0s9_Ki"
+                                            target="_blank">Mulai Belajar →
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="menengah"
+                        data-search="javascript interaksi dom event logika">
+                        <article class="course-card">
+                            <div class="course-cover cover-js">
+                                <span class="course-icon"><i class="fa-brands fa-square-js"></i></span>
+                                <span class="level-badge">MENENGAH</span>
+                            </div>
+
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span>41 Modul</span>
+                                    <span>± 8 Jam</span>
+                                </div>
+
+                                <h3>JavaScript: Web Interaktif</h3>
+
+                                <p>
+                                    Bangun logika, manipulasi DOM, event, dan komponen
+                                    interaktif pertamamu.
+                                </p>
+
+                                <div class="course-footer">
+                                    <strong>Gratis</strong>
+
+                                    <button class="link-button" type="button">
+                                        <a href="https://youtube.com/playlist?list=PL0A06OwyXeD1UezbJwKs6LP-LVMmxvy56&si=nwTjDP8qEx7zYgLB"
+                                            target="_blank">Mulai Belajar →
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 course-item" data-level="pro" data-search="mern stack fullstack">
+                        <article class="course-card">
+                            <div class="course-cover cover-mern">
+                                <span class="course-icon"><i class="fa-solid fa-crown"></i></span>
+                                <span class="level-badge">PROFESIONAL</span>
+                            </div>
+
+                            <div class="course-body">
+                                <div class="course-meta">
+                                    <span>15 Modul</span>
+                                    <span>± 66 Jam</span>
+                                </div>
+
+                                <h3>MERN Stack: MongoDB, Express.js, React.js, & Node.js</h3>
+
+                                <p>
+                                    Bangun aplikasi web fullstack modern dari awal sampai akhir, mulai dari tampilan
+                                    front-end dan back-end, hingga penyimpanan database hanya dengan satu bahasa
+                                    utama yaitu JavaScript.
+                                </p>
+
+                                <div class="course-footer">
+                                    <strong>Gratis</strong>
+
+                                    <button class="link-button" type="button">
+                                        <a href="https://youtube.com/playlist?list=PLbRpkalMD_hxM8lBsTiRetKkrd-QyDxEQ&si=GmdDF8_EbhMwaE70"
+                                            target="_blank">Mulai Belajar →
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="emptyState" class="empty-state" hidden>
+                    <span>⌕</span>
+                    <h3>Materi belum ditemukan</h3>
+
+                    <p>
+                        Coba kata kunci lain atau tampilkan semua kelas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="alur" class="roadmap-section section-space">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <span class="eyebrow">ALUR BELAJAR</span>
+
+                        <h2>
+                            Rute yang jelas, tanpa bingung mulai dari mana.
+                        </h2>
+
+                        <p>
+                            Kurikulum disusun berurutan agar setiap konsep baru memiliki
+                            fondasi yang kuat.
+                        </p>
+
+                        <a class="btn btn-outline-primary" href="#kuis">
+                            Uji Pengetahuanmu
+                        </a>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <ol class="roadmap-list">
+                            <li>
+                                <span>01</span>
+
+                                <div>
+                                    <small>MINGGU 1</small>
+                                    <h3>Kenali struktur web</h3>
+
+                                    <p>
+                                        HTML semantik, tautan, media, tabel, dan formulir.
+                                    </p>
+                                </div>
+
+                                <b>2j 30m</b>
+                            </li>
+
+                            <li>
+                                <span>02</span>
+
+                                <div>
+                                    <small>MINGGU 2</small>
+                                    <h3>Rancang tampilan</h3>
+
+                                    <p>
+                                        Warna, tipografi, spacing, Flexbox, dan Grid.
+                                    </p>
+                                </div>
+
+                                <b>4j 15m</b>
+                            </li>
+
+                            <li>
+                                <span>03</span>
+
+                                <div>
+                                    <small>MINGGU 3</small>
+                                    <h3>Tambahkan interaksi</h3>
+
+                                    <p>
+                                        Variabel, fungsi, DOM, event, dan validasi.
+                                    </p>
+                                </div>
+
+                                <b>5j 45m</b>
+                            </li>
+
+                            <li>
+                                <span>04</span>
+
+                                <div>
+                                    <small>MINGGU 4</small>
+                                    <h3>Bangun web komplit</h3>
+
+                                    <p>
+                                        Fullstack; Front-end, Back-end, dan Database system.
+                                    </p>
+                                </div>
+
+                                <b>7j 25m</b>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kuis" class="section-space">
+            <div class="container">
+                <div class="quiz-shell">
+                    <div class="quiz-intro">
+                        <span class="eyebrow">KUIS CEPAT</span>
+
+                        <h2>
+                            Seberapa paham kamu tentang HTML?
+                        </h2>
+
+                        <p>
+                            Pilih satu jawaban. Hasil dan penjelasan akan tampil langsung.
+                        </p>
+
+                        <div class="quiz-score">
+                            <span>1</span>
+                            <small>PERTANYAAN</small>
+                        </div>
+                    </div>
+
+                    <form id="quizForm" class="quiz-card">
+                        <fieldset>
+                            <legend>
+                                Elemen HTML mana yang paling tepat untuk navigasi utama?
+                            </legend>
+
+                            <label class="answer">
+                                <input type="radio" name="answer" value="div">
+                                <span>A</span>
+                                <code>&lt;div&gt;</code>
+                            </label>
+
+                            <label class="answer">
+                                <input type="radio" name="answer" value="nav">
+                                <span>B</span>
+                                <code>&lt;nav&gt;</code>
+                            </label>
+
+                            <label class="answer">
+                                <input type="radio" name="answer" value="section">
+                                <span>C</span>
+                                <code>&lt;section&gt;</code>
+                            </label>
+
+                            <label class="answer">
+                                <input type="radio" name="answer" value="main">
+                                <span>D</span>
+                                <code>&lt;main&gt;</code>
+                            </label>
+                        </fieldset>
+
+                        <button class="btn btn-primary w-100" type="submit">
+                            Periksa Jawaban
+                        </button>
+
+                        <div id="quizFeedback" class="quiz-feedback" role="status" aria-live="polite" hidden></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container text-center">
+                <span class="eyebrow">SIAP MEMULAI?</span>
+
+                <h2>
+                    Ubah rasa penasaran menjadi karya nyata.
+                </h2>
+
+                <p>
+                    Mulai dari satu modul hari ini. Konsistensi kecil akan membawa
+                    hasil besar.
+                </p>
+
+                <a class="btn btn-light btn-lg" href="#kelas">
+                    Jelajahi Kelas Gratis
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+            <a class="navbar-brand" href="#beranda">
+                <span class="brand-mark"><i class="fa-solid fa-laptop-code"></i></span>
+                <span>FA Course</span>
+            </a>
+
+            <p>
+                ©2026 FA Course.<br>
+                Dibuat oleh fathir alghifari, fajrianwar fachrul untuk memenuhi tugas UAS PW 1.
+            </p>
+
+            <nav aria-label="Navigasi footer">
+                <a href="#kelas">Kelas</a>
+                <a href="#alur">Alur</a>
+                <a href="#kuis">Kuis</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
